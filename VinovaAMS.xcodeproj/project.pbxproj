@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEB36B321F135CFF008E617B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB36B311F135CFF008E617B /* AppDelegate.swift */; };
+		CEB36B341F135CFF008E617B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB36B331F135CFF008E617B /* ViewController.swift */; };
+		CEB36B371F135CFF008E617B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB36B351F135CFF008E617B /* Main.storyboard */; };
+		CEB36B3A1F135CFF008E617B /* VinovaAMS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEB36B381F135CFF008E617B /* VinovaAMS.xcdatamodeld */; };
+		CEB36B3C1F135CFF008E617B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB36B3B1F135CFF008E617B /* Assets.xcassets */; };
+		CEB36B3F1F135CFF008E617B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB36B3D1F135CFF008E617B /* LaunchScreen.storyboard */; };
+		CEB36B521F135E3E008E617B /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEB36B501F135E3E008E617B /* Roboto-Bold.ttf */; };
+		CEB36B531F135E3E008E617B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEB36B511F135E3E008E617B /* Roboto-Regular.ttf */; };
+		CEB36B5A1F135E6A008E617B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B561F135E6A008E617B /* Alamofire.framework */; };
+		CEB36B5B1F135E6A008E617B /* Device.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B571F135E6A008E617B /* Device.framework */; };
+		CEB36B5C1F135E6A008E617B /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B581F135E6A008E617B /* SDWebImage.framework */; };
+		CEB36B5D1F135E6A008E617B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B591F135E6A008E617B /* SwiftyJSON.framework */; };
+		CEB36B5E1F135E74008E617B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B561F135E6A008E617B /* Alamofire.framework */; };
+		CEB36B5F1F135E74008E617B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B561F135E6A008E617B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEB36B601F135E74008E617B /* Device.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B571F135E6A008E617B /* Device.framework */; };
+		CEB36B611F135E74008E617B /* Device.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B571F135E6A008E617B /* Device.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEB36B621F135E74008E617B /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B581F135E6A008E617B /* SDWebImage.framework */; };
+		CEB36B631F135E74008E617B /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B581F135E6A008E617B /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEB36B641F135E74008E617B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B591F135E6A008E617B /* SwiftyJSON.framework */; };
+		CEB36B651F135E74008E617B /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B591F135E6A008E617B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEB36B681F135F76008E617B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB36B671F135F76008E617B /* Constants.swift */; };
+		CEB36B6A1F1361A2008E617B /* TGetDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB36B691F1361A2008E617B /* TGetDevice.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEB36B661F135E74008E617B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CEB36B651F135E74008E617B /* SwiftyJSON.framework in Embed Frameworks */,
+				CEB36B611F135E74008E617B /* Device.framework in Embed Frameworks */,
+				CEB36B631F135E74008E617B /* SDWebImage.framework in Embed Frameworks */,
+				CEB36B5F1F135E74008E617B /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CEB36B2E1F135CFF008E617B /* VinovaAMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinovaAMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB36B311F135CFF008E617B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEB36B331F135CFF008E617B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEB36B361F135CFF008E617B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEB36B391F135CFF008E617B /* VinovaAMS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VinovaAMS.xcdatamodel; sourceTree = "<group>"; };
+		CEB36B3B1F135CFF008E617B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEB36B3E1F135CFF008E617B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEB36B401F135CFF008E617B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB36B501F135E3E008E617B /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		CEB36B511F135E3E008E617B /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		CEB36B561F135E6A008E617B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		CEB36B571F135E6A008E617B /* Device.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Device.framework; sourceTree = "<group>"; };
+		CEB36B581F135E6A008E617B /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		CEB36B591F135E6A008E617B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
+		CEB36B671F135F76008E617B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEB36B691F1361A2008E617B /* TGetDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGetDevice.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEB36B2B1F135CFF008E617B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB36B641F135E74008E617B /* SwiftyJSON.framework in Frameworks */,
+				CEB36B601F135E74008E617B /* Device.framework in Frameworks */,
+				CEB36B5D1F135E6A008E617B /* SwiftyJSON.framework in Frameworks */,
+				CEB36B5B1F135E6A008E617B /* Device.framework in Frameworks */,
+				CEB36B5C1F135E6A008E617B /* SDWebImage.framework in Frameworks */,
+				CEB36B621F135E74008E617B /* SDWebImage.framework in Frameworks */,
+				CEB36B5E1F135E74008E617B /* Alamofire.framework in Frameworks */,
+				CEB36B5A1F135E6A008E617B /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEB36B251F135CFF008E617B = {
+			isa = PBXGroup;
+			children = (
+				CEB36B4A1F135D5A008E617B /* Component */,
+				CEB36B491F135D3F008E617B /* Resource */,
+				CEB36B481F135D2D008E617B /* Model */,
+				CEB36B471F135D1D008E617B /* ViewControllers */,
+				CEB36B461F135D09008E617B /* Frameworks */,
+				CEB36B301F135CFF008E617B /* VinovaAMS */,
+				CEB36B2F1F135CFF008E617B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEB36B2F1F135CFF008E617B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEB36B2E1F135CFF008E617B /* VinovaAMS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEB36B301F135CFF008E617B /* VinovaAMS */ = {
+			isa = PBXGroup;
+			children = (
+				CEB36B311F135CFF008E617B /* AppDelegate.swift */,
+				CEB36B331F135CFF008E617B /* ViewController.swift */,
+				CEB36B351F135CFF008E617B /* Main.storyboard */,
+				CEB36B3B1F135CFF008E617B /* Assets.xcassets */,
+				CEB36B3D1F135CFF008E617B /* LaunchScreen.storyboard */,
+				CEB36B401F135CFF008E617B /* Info.plist */,
+				CEB36B381F135CFF008E617B /* VinovaAMS.xcdatamodeld */,
+			);
+			path = VinovaAMS;
+			sourceTree = "<group>";
+		};
+		CEB36B461F135D09008E617B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEB36B561F135E6A008E617B /* Alamofire.framework */,
+				CEB36B571F135E6A008E617B /* Device.framework */,
+				CEB36B581F135E6A008E617B /* SDWebImage.framework */,
+				CEB36B591F135E6A008E617B /* SwiftyJSON.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEB36B471F135D1D008E617B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CEB36B481F135D2D008E617B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEB36B491F135D3F008E617B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CEB36B4F1F135DF8008E617B /* Fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		CEB36B4A1F135D5A008E617B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				CEB36B4E1F135DC1008E617B /* Constants */,
+				CEB36B4D1F135DAE008E617B /* CustomerViews */,
+				CEB36B4C1F135D93008E617B /* Helper */,
+				CEB36B4B1F135D7B008E617B /* Extension */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		CEB36B4B1F135D7B008E617B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CEB36B4C1F135D93008E617B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CEB36B691F1361A2008E617B /* TGetDevice.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CEB36B4D1F135DAE008E617B /* CustomerViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomerViews;
+			sourceTree = "<group>";
+		};
+		CEB36B4E1F135DC1008E617B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CEB36B671F135F76008E617B /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CEB36B4F1F135DF8008E617B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CEB36B501F135E3E008E617B /* Roboto-Bold.ttf */,
+				CEB36B511F135E3E008E617B /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEB36B2D1F135CFF008E617B /* VinovaAMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB36B431F135CFF008E617B /* Build configuration list for PBXNativeTarget "VinovaAMS" */;
+			buildPhases = (
+				CEB36B2A1F135CFF008E617B /* Sources */,
+				CEB36B2B1F135CFF008E617B /* Frameworks */,
+				CEB36B2C1F135CFF008E617B /* Resources */,
+				CEB36B661F135E74008E617B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VinovaAMS;
+			productName = VinovaAMS;
+			productReference = CEB36B2E1F135CFF008E617B /* VinovaAMS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEB36B261F135CFF008E617B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Hoang Quan Tran";
+				TargetAttributes = {
+					CEB36B2D1F135CFF008E617B = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CEB36B291F135CFF008E617B /* Build configuration list for PBXProject "VinovaAMS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEB36B251F135CFF008E617B;
+			productRefGroup = CEB36B2F1F135CFF008E617B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEB36B2D1F135CFF008E617B /* VinovaAMS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEB36B2C1F135CFF008E617B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB36B3F1F135CFF008E617B /* LaunchScreen.storyboard in Resources */,
+				CEB36B3C1F135CFF008E617B /* Assets.xcassets in Resources */,
+				CEB36B531F135E3E008E617B /* Roboto-Regular.ttf in Resources */,
+				CEB36B521F135E3E008E617B /* Roboto-Bold.ttf in Resources */,
+				CEB36B371F135CFF008E617B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEB36B2A1F135CFF008E617B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB36B341F135CFF008E617B /* ViewController.swift in Sources */,
+				CEB36B3A1F135CFF008E617B /* VinovaAMS.xcdatamodeld in Sources */,
+				CEB36B321F135CFF008E617B /* AppDelegate.swift in Sources */,
+				CEB36B681F135F76008E617B /* Constants.swift in Sources */,
+				CEB36B6A1F1361A2008E617B /* TGetDevice.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEB36B351F135CFF008E617B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB36B361F135CFF008E617B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEB36B3D1F135CFF008E617B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB36B3E1F135CFF008E617B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEB36B411F135CFF008E617B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEB36B421F135CFF008E617B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEB36B441F135CFF008E617B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = VinovaAMS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = trnhgquan.VinovaAMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CEB36B451F135CFF008E617B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = VinovaAMS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = trnhgquan.VinovaAMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEB36B291F135CFF008E617B /* Build configuration list for PBXProject "VinovaAMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB36B411F135CFF008E617B /* Debug */,
+				CEB36B421F135CFF008E617B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB36B431F135CFF008E617B /* Build configuration list for PBXNativeTarget "VinovaAMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB36B441F135CFF008E617B /* Debug */,
+				CEB36B451F135CFF008E617B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEB36B381F135CFF008E617B /* VinovaAMS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEB36B391F135CFF008E617B /* VinovaAMS.xcdatamodel */,
+			);
+			currentVersion = CEB36B391F135CFF008E617B /* VinovaAMS.xcdatamodel */;
+			path = VinovaAMS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CEB36B261F135CFF008E617B /* Project object */;
+}
