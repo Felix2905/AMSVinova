@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -14,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VinovaAMS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="VinovaAMS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -26,19 +27,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88D-Qz-Fis">
-                                <rect key="frame" x="117" y="298" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vinova ASM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEL-EZ-i4y">
+                                <rect key="frame" x="20" y="90" width="147" height="32"/>
+                                <color key="backgroundColor" red="1" green="0.99998795986175537" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Py9-rq-cns">
+                                <rect key="frame" x="20" y="142" width="43" height="20"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEb-Oc-odY">
+                                <rect key="frame" x="20" y="177" width="335" height="258"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0r3-b8-GsC">
+                                        <rect key="frame" x="22" y="30" width="38" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymP-f0-AwP">
+                                        <rect key="frame" x="22" y="125.5" width="69" height="16"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQS-hz-VJK">
+                                        <rect key="frame" x="20" y="55.5" width="295" height="48"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ROI-wt-oRX">
+                                        <rect key="frame" x="20" y="151.5" width="295" height="48"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbL-NJ-Bhr">
+                                        <rect key="frame" x="269" y="212.5" width="46" height="44.5"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0r3-b8-GsC" firstAttribute="leading" secondItem="mEb-Oc-odY" secondAttribute="leading" constant="22" id="0yO-m2-ibY"/>
+                                    <constraint firstItem="cQS-hz-VJK" firstAttribute="height" secondItem="mEb-Oc-odY" secondAttribute="height" multiplier="97/520" id="Apf-Od-LhY"/>
+                                    <constraint firstItem="HbL-NJ-Bhr" firstAttribute="top" secondItem="ROI-wt-oRX" secondAttribute="bottom" constant="13" id="DZ5-i3-hMO"/>
+                                    <constraint firstAttribute="trailing" secondItem="cQS-hz-VJK" secondAttribute="trailing" constant="20" id="Hlr-At-htv"/>
+                                    <constraint firstItem="cQS-hz-VJK" firstAttribute="top" secondItem="0r3-b8-GsC" secondAttribute="bottom" constant="10" id="JW8-hi-9Vz"/>
+                                    <constraint firstItem="HbL-NJ-Bhr" firstAttribute="height" secondItem="mEb-Oc-odY" secondAttribute="height" multiplier="90/520" id="R0P-Jl-ujI"/>
+                                    <constraint firstItem="HbL-NJ-Bhr" firstAttribute="trailing" secondItem="ROI-wt-oRX" secondAttribute="trailing" id="VeK-Rq-L7i"/>
+                                    <constraint firstItem="ROI-wt-oRX" firstAttribute="height" secondItem="cQS-hz-VJK" secondAttribute="height" id="ZKx-1d-jDA"/>
+                                    <constraint firstItem="ymP-f0-AwP" firstAttribute="leading" secondItem="mEb-Oc-odY" secondAttribute="leading" constant="22" id="ZlZ-1W-MbQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ROI-wt-oRX" secondAttribute="trailing" constant="20" id="bVS-NX-NMJ"/>
+                                    <constraint firstItem="0r3-b8-GsC" firstAttribute="top" secondItem="mEb-Oc-odY" secondAttribute="top" constant="30" id="kBC-eG-F6d"/>
+                                    <constraint firstItem="ymP-f0-AwP" firstAttribute="top" secondItem="cQS-hz-VJK" secondAttribute="bottom" constant="22" id="ouY-N5-xsm"/>
+                                    <constraint firstItem="ROI-wt-oRX" firstAttribute="leading" secondItem="mEb-Oc-odY" secondAttribute="leading" constant="20" id="r4B-gg-0Rp"/>
+                                    <constraint firstItem="ROI-wt-oRX" firstAttribute="width" secondItem="cQS-hz-VJK" secondAttribute="width" id="sz9-ud-YMj"/>
+                                    <constraint firstItem="cQS-hz-VJK" firstAttribute="leading" secondItem="mEb-Oc-odY" secondAttribute="leading" constant="20" id="tbA-Qu-AWZ"/>
+                                    <constraint firstItem="ROI-wt-oRX" firstAttribute="top" secondItem="ymP-f0-AwP" secondAttribute="bottom" constant="10" id="xaI-GB-mxJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Py9-rq-cns" firstAttribute="leading" secondItem="MEL-EZ-i4y" secondAttribute="leading" id="5R9-WO-5Ll"/>
+                            <constraint firstItem="mEb-Oc-odY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="520/1344" id="8Y3-RB-KII"/>
+                            <constraint firstItem="mEb-Oc-odY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ai-Si-HdM"/>
+                            <constraint firstItem="MEL-EZ-i4y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="HpR-BW-ZwS"/>
+                            <constraint firstAttribute="trailing" secondItem="mEb-Oc-odY" secondAttribute="trailing" constant="20" id="OJa-t8-cei"/>
+                            <constraint firstItem="MEL-EZ-i4y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Thi-PZ-8cD"/>
+                            <constraint firstItem="Py9-rq-cns" firstAttribute="top" secondItem="MEL-EZ-i4y" secondAttribute="bottom" constant="20" id="fXs-LK-oZg"/>
+                            <constraint firstItem="mEb-Oc-odY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="qVM-5U-M8n"/>
+                            <constraint firstItem="mEb-Oc-odY" firstAttribute="top" secondItem="Py9-rq-cns" secondAttribute="bottom" constant="15" id="wzh-3D-oar"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginLabel" destination="Py9-rq-cns" id="vY6-I8-XHU"/>
+                        <outlet property="loginView" destination="mEb-Oc-odY" id="fYr-Q8-ahf"/>
+                        <outlet property="logoLabel" destination="MEL-EZ-i4y" id="Jsi-Ul-mQY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>
