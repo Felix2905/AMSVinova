@@ -14,3 +14,9 @@ struct AMSColor {
     static let orangeColor = UIColor(red: 210/255, green: 166/255, blue: 104/255, alpha: 1)
 
 }
+
+struct StoryBoardMain {
+    static let homeStoryBoard = UIStoryboard(name: "HomeStoryboard", bundle: nil)
+    static let assetStoryBoard = UIStoryboard(name: "AssetStoryboard", bundle: nil)
+    static let requestStoryBoard = UIStoryboard(name: "RequestStoryboard", bundle: nil)
+}

@@ -31,30 +31,34 @@ class LoginViewController: UIViewController {
         loginLabel.sizeToFit()
         loginView.backgroundColor = .white
         btnLogin.backgroundColor = AMSColor.redColor
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func loginBtn(_ sender: Any) {
-        let email = emailTf.text
-        let password = passwordTf.text
-        if  isEmailExist(email: email!) {
-            if checkPassword(password: password!) {
-                let alertController = UIAlertController(title: "Login", message: "Successfully", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .cancel , handler: nil))
-                present(alertController, animated: true, completion: nil)
-            }
-            else{
-                let alertController = UIAlertController(title: "Login", message: "Password incorrect", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .cancel , handler: nil))
-                present(alertController, animated: true, completion: nil)
-            }
-           
-        }
-        else {
-            let alertController = UIAlertController(title: "Login", message: "Email incorrect", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .cancel , handler: nil))
-            present(alertController, animated: true, completion: nil)
-        }
+        let vc = StoryBoardMain.homeStoryBoard.instantiateViewController(withIdentifier: "MyHomeViewController")
+        
+//        self.navigationController?.present(vc, animated: true, completion: nil)
+         present(vc, animated: true, completion: nil)
+//        let email = emailTf.text
+//        let password = passwordTf.text
+//        if  isEmailExist(email: email!) {
+//            if checkPassword(password: password!) {
+//                let vcPostCode = MyHomeViewController()
+//                self.navigationController?.pushViewController(vcPostCode, animated: true)
+//            }
+//            else{
+//                let alertController = UIAlertController(title: "Login", message: "Password incorrect", preferredStyle: .alert)
+//                alertController.addAction(UIAlertAction(title: "OK", style: .cancel , handler: nil))
+//                present(alertController, animated: true, completion: nil)
+//            }
+//           
+//        }
+//        else {
+//            let alertController = UIAlertController(title: "Login", message: "Email incorrect", preferredStyle: .alert)
+//            alertController.addAction(UIAlertAction(title: "OK", style: .cancel , handler: nil))
+//            present(alertController, animated: true, completion: nil)
+//        }
     }
     
     func isEmailExist(email: String) -> Bool{

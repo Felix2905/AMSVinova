@@ -19,6 +19,10 @@
 		CE40E01E1F147F1B00968F5F /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E0131F147F1B00968F5F /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE40E01F1F147F1B00968F5F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E0141F147F1B00968F5F /* SwiftyJSON.framework */; };
 		CE40E0201F147F1B00968F5F /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E0141F147F1B00968F5F /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE40E0221F14833E00968F5F /* MyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40E0211F14833E00968F5F /* MyHomeViewController.swift */; };
+		CE40E0241F1491B500968F5F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40E0231F1491B500968F5F /* BaseViewController.swift */; };
+		CE40E02E1F14BA0900968F5F /* WindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40E02D1F14BA0900968F5F /* WindowExtension.swift */; };
+		CE40E0301F14BA8300968F5F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40E02F1F14BA8300968F5F /* UIView+Extension.swift */; };
 		CE697DDA1F138F96001E62CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE697DD91F138F96001E62CA /* LoginViewController.swift */; };
 		CE697DDC1F138FEC001E62CA /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE697DDB1F138FEC001E62CA /* HomeStoryboard.storyboard */; };
 		CE697DDE1F138FFB001E62CA /* AssetStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE697DDD1F138FFB001E62CA /* AssetStoryboard.storyboard */; };
@@ -61,6 +65,10 @@
 		CE40E0121F147F1B00968F5F /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		CE40E0131F147F1B00968F5F /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = ../Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		CE40E0141F147F1B00968F5F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		CE40E0211F14833E00968F5F /* MyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeViewController.swift; sourceTree = "<group>"; };
+		CE40E0231F1491B500968F5F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CE40E02D1F14BA0900968F5F /* WindowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowExtension.swift; sourceTree = "<group>"; };
+		CE40E02F1F14BA8300968F5F /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		CE697DD91F138F96001E62CA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE697DDB1F138FEC001E62CA /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		CE697DDD1F138FFB001E62CA /* AssetStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AssetStoryboard.storyboard; sourceTree = "<group>"; };
@@ -100,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				CE697DDB1F138FEC001E62CA /* HomeStoryboard.storyboard */,
+				CE40E0211F14833E00968F5F /* MyHomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -131,6 +140,8 @@
 		CEB36B251F135CFF008E617B = {
 			isa = PBXGroup;
 			children = (
+				CE40E02F1F14BA8300968F5F /* UIView+Extension.swift */,
+				CE40E02D1F14BA0900968F5F /* WindowExtension.swift */,
 				CEB36B4A1F135D5A008E617B /* Component */,
 				CEB36B491F135D3F008E617B /* Resource */,
 				CEB36B481F135D2D008E617B /* Model */,
@@ -183,6 +194,7 @@
 				CE697DD51F138F0D001E62CA /* Request */,
 				CE697DD41F138EC5001E62CA /* Asset */,
 				CE697DD31F138EAA001E62CA /* Home */,
+				CE40E0231F1491B500968F5F /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -332,10 +344,14 @@
 			files = (
 				CE697DDA1F138F96001E62CA /* LoginViewController.swift in Sources */,
 				CEB36B341F135CFF008E617B /* ViewController.swift in Sources */,
+				CE40E02E1F14BA0900968F5F /* WindowExtension.swift in Sources */,
 				CEB36B3A1F135CFF008E617B /* VinovaAMS.xcdatamodeld in Sources */,
 				CEB36B321F135CFF008E617B /* AppDelegate.swift in Sources */,
 				CEB36B681F135F76008E617B /* Constants.swift in Sources */,
+				CE40E0241F1491B500968F5F /* BaseViewController.swift in Sources */,
 				CEB36B6A1F1361A2008E617B /* TGetDevice.swift in Sources */,
+				CE40E0301F14BA8300968F5F /* UIView+Extension.swift in Sources */,
+				CE40E0221F14833E00968F5F /* MyHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
