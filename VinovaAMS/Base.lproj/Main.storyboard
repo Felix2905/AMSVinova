@@ -68,8 +68,14 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbL-NJ-Bhr">
-                                        <rect key="frame" x="269" y="212.5" width="46" height="44.5"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="185" y="212.5" width="130" height="44.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9e-qj-FRS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,6 +87,7 @@
                                     <constraint firstItem="cQS-hz-VJK" firstAttribute="top" secondItem="0r3-b8-GsC" secondAttribute="bottom" constant="10" id="JW8-hi-9Vz"/>
                                     <constraint firstItem="HbL-NJ-Bhr" firstAttribute="height" secondItem="mEb-Oc-odY" secondAttribute="height" multiplier="90/520" id="R0P-Jl-ujI"/>
                                     <constraint firstItem="HbL-NJ-Bhr" firstAttribute="trailing" secondItem="ROI-wt-oRX" secondAttribute="trailing" id="VeK-Rq-L7i"/>
+                                    <constraint firstItem="HbL-NJ-Bhr" firstAttribute="width" secondItem="mEb-Oc-odY" secondAttribute="width" multiplier="260/670" id="YLF-Jq-zzN"/>
                                     <constraint firstItem="ROI-wt-oRX" firstAttribute="height" secondItem="cQS-hz-VJK" secondAttribute="height" id="ZKx-1d-jDA"/>
                                     <constraint firstItem="ymP-f0-AwP" firstAttribute="leading" secondItem="mEb-Oc-odY" secondAttribute="leading" constant="22" id="ZlZ-1W-MbQ"/>
                                     <constraint firstAttribute="trailing" secondItem="ROI-wt-oRX" secondAttribute="trailing" constant="20" id="bVS-NX-NMJ"/>
@@ -107,9 +114,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnLogin" destination="HbL-NJ-Bhr" id="dgL-Ab-OpJ"/>
+                        <outlet property="emailTf" destination="cQS-hz-VJK" id="UWA-4O-YqZ"/>
                         <outlet property="loginLabel" destination="Py9-rq-cns" id="vY6-I8-XHU"/>
                         <outlet property="loginView" destination="mEb-Oc-odY" id="fYr-Q8-ahf"/>
                         <outlet property="logoLabel" destination="MEL-EZ-i4y" id="Jsi-Ul-mQY"/>
+                        <outlet property="passwordTf" destination="ROI-wt-oRX" id="9Q8-Qs-jd5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
