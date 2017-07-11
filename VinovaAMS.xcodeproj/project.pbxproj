@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE40E0151F147F1B00968F5F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E00F1F147F1B00968F5F /* Alamofire.framework */; };
+		CE40E0161F147F1B00968F5F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E00F1F147F1B00968F5F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE40E0171F147F1B00968F5F /* Device.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E0101F147F1B00968F5F /* Device.framework */; };
+		CE40E0181F147F1B00968F5F /* Device.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E0101F147F1B00968F5F /* Device.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE40E0191F147F1B00968F5F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E0111F147F1B00968F5F /* Realm.framework */; };
+		CE40E01A1F147F1B00968F5F /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E0111F147F1B00968F5F /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE40E01B1F147F1B00968F5F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E0121F147F1B00968F5F /* RealmSwift.framework */; };
+		CE40E01C1F147F1B00968F5F /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E0121F147F1B00968F5F /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE40E01D1F147F1B00968F5F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E0131F147F1B00968F5F /* SDWebImage.framework */; };
+		CE40E01E1F147F1B00968F5F /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E0131F147F1B00968F5F /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE40E01F1F147F1B00968F5F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E0141F147F1B00968F5F /* SwiftyJSON.framework */; };
+		CE40E0201F147F1B00968F5F /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE40E0141F147F1B00968F5F /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE697DDA1F138F96001E62CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE697DD91F138F96001E62CA /* LoginViewController.swift */; };
 		CE697DDC1F138FEC001E62CA /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE697DDB1F138FEC001E62CA /* HomeStoryboard.storyboard */; };
 		CE697DDE1F138FFB001E62CA /* AssetStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE697DDD1F138FFB001E62CA /* AssetStoryboard.storyboard */; };
@@ -19,18 +31,6 @@
 		CEB36B3F1F135CFF008E617B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB36B3D1F135CFF008E617B /* LaunchScreen.storyboard */; };
 		CEB36B521F135E3E008E617B /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEB36B501F135E3E008E617B /* Roboto-Bold.ttf */; };
 		CEB36B531F135E3E008E617B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEB36B511F135E3E008E617B /* Roboto-Regular.ttf */; };
-		CEB36B5A1F135E6A008E617B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B561F135E6A008E617B /* Alamofire.framework */; };
-		CEB36B5B1F135E6A008E617B /* Device.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B571F135E6A008E617B /* Device.framework */; };
-		CEB36B5C1F135E6A008E617B /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B581F135E6A008E617B /* SDWebImage.framework */; };
-		CEB36B5D1F135E6A008E617B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B591F135E6A008E617B /* SwiftyJSON.framework */; };
-		CEB36B5E1F135E74008E617B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B561F135E6A008E617B /* Alamofire.framework */; };
-		CEB36B5F1F135E74008E617B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B561F135E6A008E617B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEB36B601F135E74008E617B /* Device.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B571F135E6A008E617B /* Device.framework */; };
-		CEB36B611F135E74008E617B /* Device.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B571F135E6A008E617B /* Device.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEB36B621F135E74008E617B /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B581F135E6A008E617B /* SDWebImage.framework */; };
-		CEB36B631F135E74008E617B /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B581F135E6A008E617B /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEB36B641F135E74008E617B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B591F135E6A008E617B /* SwiftyJSON.framework */; };
-		CEB36B651F135E74008E617B /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEB36B591F135E6A008E617B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEB36B681F135F76008E617B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB36B671F135F76008E617B /* Constants.swift */; };
 		CEB36B6A1F1361A2008E617B /* TGetDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB36B691F1361A2008E617B /* TGetDevice.swift */; };
 /* End PBXBuildFile section */
@@ -42,10 +42,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CEB36B651F135E74008E617B /* SwiftyJSON.framework in Embed Frameworks */,
-				CEB36B611F135E74008E617B /* Device.framework in Embed Frameworks */,
-				CEB36B631F135E74008E617B /* SDWebImage.framework in Embed Frameworks */,
-				CEB36B5F1F135E74008E617B /* Alamofire.framework in Embed Frameworks */,
+				CE40E01E1F147F1B00968F5F /* SDWebImage.framework in Embed Frameworks */,
+				CE40E01A1F147F1B00968F5F /* Realm.framework in Embed Frameworks */,
+				CE40E0201F147F1B00968F5F /* SwiftyJSON.framework in Embed Frameworks */,
+				CE40E0181F147F1B00968F5F /* Device.framework in Embed Frameworks */,
+				CE40E01C1F147F1B00968F5F /* RealmSwift.framework in Embed Frameworks */,
+				CE40E0161F147F1B00968F5F /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +55,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE40E00F1F147F1B00968F5F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		CE40E0101F147F1B00968F5F /* Device.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Device.framework; path = ../Carthage/Build/iOS/Device.framework; sourceTree = "<group>"; };
+		CE40E0111F147F1B00968F5F /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		CE40E0121F147F1B00968F5F /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		CE40E0131F147F1B00968F5F /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = ../Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		CE40E0141F147F1B00968F5F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		CE697DD91F138F96001E62CA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE697DDB1F138FEC001E62CA /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		CE697DDD1F138FFB001E62CA /* AssetStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AssetStoryboard.storyboard; sourceTree = "<group>"; };
@@ -67,10 +75,6 @@
 		CEB36B401F135CFF008E617B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB36B501F135E3E008E617B /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		CEB36B511F135E3E008E617B /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		CEB36B561F135E6A008E617B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		CEB36B571F135E6A008E617B /* Device.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Device.framework; sourceTree = "<group>"; };
-		CEB36B581F135E6A008E617B /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
-		CEB36B591F135E6A008E617B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
 		CEB36B671F135F76008E617B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CEB36B691F1361A2008E617B /* TGetDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGetDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,14 +84,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB36B641F135E74008E617B /* SwiftyJSON.framework in Frameworks */,
-				CEB36B601F135E74008E617B /* Device.framework in Frameworks */,
-				CEB36B5D1F135E6A008E617B /* SwiftyJSON.framework in Frameworks */,
-				CEB36B5B1F135E6A008E617B /* Device.framework in Frameworks */,
-				CEB36B5C1F135E6A008E617B /* SDWebImage.framework in Frameworks */,
-				CEB36B621F135E74008E617B /* SDWebImage.framework in Frameworks */,
-				CEB36B5E1F135E74008E617B /* Alamofire.framework in Frameworks */,
-				CEB36B5A1F135E6A008E617B /* Alamofire.framework in Frameworks */,
+				CE40E01D1F147F1B00968F5F /* SDWebImage.framework in Frameworks */,
+				CE40E0191F147F1B00968F5F /* Realm.framework in Frameworks */,
+				CE40E01F1F147F1B00968F5F /* SwiftyJSON.framework in Frameworks */,
+				CE40E0171F147F1B00968F5F /* Device.framework in Frameworks */,
+				CE40E01B1F147F1B00968F5F /* RealmSwift.framework in Frameworks */,
+				CE40E0151F147F1B00968F5F /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,10 +166,12 @@
 		CEB36B461F135D09008E617B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEB36B561F135E6A008E617B /* Alamofire.framework */,
-				CEB36B571F135E6A008E617B /* Device.framework */,
-				CEB36B581F135E6A008E617B /* SDWebImage.framework */,
-				CEB36B591F135E6A008E617B /* SwiftyJSON.framework */,
+				CE40E00F1F147F1B00968F5F /* Alamofire.framework */,
+				CE40E0101F147F1B00968F5F /* Device.framework */,
+				CE40E0111F147F1B00968F5F /* Realm.framework */,
+				CE40E0121F147F1B00968F5F /* RealmSwift.framework */,
+				CE40E0131F147F1B00968F5F /* SDWebImage.framework */,
+				CE40E0141F147F1B00968F5F /* SwiftyJSON.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -459,6 +463,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = VinovaAMS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -475,6 +480,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = VinovaAMS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

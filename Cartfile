@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire"
+github "SwiftyJSON/SwiftyJSON"
+github "Ekhoo/Device"
+github "rs/SDWebImage"
+github "realm/realm-cocoa"
